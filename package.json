@@ -23,6 +23,9 @@
         "validate": "npm run check-format & npm run lint",
         "prepare": "husky install"
     },
+    "overrides": {
+        "trim-newlines": "^3.0.1"
+      },
     "eslintConfig": {
         "extends": [
             "react-app",
