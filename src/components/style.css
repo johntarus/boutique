@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    justify-content: center;
+    height: 100%;
+    font: semibold;
+    width: 60%;
+    background: #002c3e;
+    transition: 1s ease-in;
+}
+
+/* flex flex-col list-none text-lg text-white justify-center bg-black h-[calc(100vh-60px)] font-semibold */
