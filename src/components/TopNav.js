@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import phone from "../assets/phone.svg"
 import support from "../assets/support.svg"
 import chevronDown from "../assets/chevronDown.svg"
@@ -17,31 +18,23 @@ const TopNav = () => {
                 </div>
                 <div className="flex items-center gap-1">
                     <img className="h-4 w-4 mt-1" src={support} />
-                    <p>support@uniquefashion.com asap</p>
+                    <p>support@uniquefashion.com</p>
                 </div>
             </div>
             <div className="flex items-center gap-12">
                 <div className="flex md:hidden lg:flex gap-3">
-                    <AiFillFacebook
-                        fill="white"
-                        size={20}
-                        className="cursor-pointer"
-                    />
-                    <AiFillTwitterSquare
-                        fill="white"
-                        size={20}
-                        className="cursor-pointer"
-                    />
-                    <FaInstagramSquare
-                        fill="white"
-                        size={20}
-                        className="cursor-pointer"
-                    />
-                    <FaWhatsappSquare
-                        fill="white"
-                        size={20}
-                        className="cursor-pointer"
-                    />
+                    <Link to={"/"}>
+                        <AiFillFacebook fill="white" size={20} />
+                    </Link>
+                    <Link to={"/"}>
+                        <AiFillTwitterSquare fill="white" size={20} />
+                    </Link>
+                    <Link to={"/"}>
+                        <FaInstagramSquare fill="white" size={20} />
+                    </Link>
+                    <Link to={"/"}>
+                        <FaWhatsappSquare fill="white" size={20} />
+                    </Link>
                 </div>
                 <div className="flex gap-6 text-white text-xs mr-16 font-bold">
                     <p>FAQ&apos;s</p>

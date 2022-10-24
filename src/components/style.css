@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
     display: flex;
     flex-direction: column;
     color: white;
@@ -12,4 +12,4 @@
     transition: 1s ease-in;
 }
 
-/* flex flex-col list-none text-lg text-white justify-center bg-black h-[calc(100vh-60px)] font-semibold */
+flex flex-col list-none text-lg text-white justify-center bg-black h-[calc(100vh-60px)] font-semibold */

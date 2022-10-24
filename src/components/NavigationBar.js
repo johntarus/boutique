@@ -22,7 +22,9 @@ const NavigationBar = () => {
                     <img className="w-18 h-4" src={logo} />
                 </div>
                 <div className="flex list-none text-lg">
-                    <Link className="mx-6">Home</Link>
+                    <Link to={"/"} className="mx-6">
+                        Home
+                    </Link>
                     <Link className="mx-6">Shop</Link>
                     <Link className="mx-6">Blog</Link>
                     <Link className="mx-6">Contact</Link>
@@ -61,51 +63,31 @@ const NavigationBar = () => {
                 </div>
                 <div>
                     {isOpen && (
-                        <ul className="nav">
+                        <ul className="nav flex flex-col list-none text-lg text-white justify-center bg-black h-[calc(100vh-60px)] w-72 font-semibold">
                             <Link
-                                onClick={() => {
-                                    handleClick()
-                                }}
+                                to={"/"}
+                                onClick={handleClick}
                                 className="mx- m-8"
                             >
                                 Home
                             </Link>
-                            <Link
-                                onClick={() => {
-                                    handleClick()
-                                }}
-                                className="m-8"
-                            >
+                            <Link onClick={handleClick} className="m-8">
                                 Shop
                             </Link>
-                            <Link
-                                onClick={() => {
-                                    handleClick()
-                                }}
-                                className="m-8"
-                            >
+                            <Link onClick={handleClick} className="m-8">
                                 Blog
                             </Link>
-                            <Link
-                                onClick={() => {
-                                    handleClick()
-                                }}
-                                className="m-8"
-                            >
+                            <Link onClick={handleClick} className="m-8">
                                 Contact
                             </Link>
                             <div className="flex">
                                 <img
-                                    onClick={() => {
-                                        handleClick()
-                                    }}
+                                    onClick={handleClick}
                                     className="ml-8 h-6 w-6"
                                     src={mobileUser}
                                 />
                                 <img
-                                    onClick={() => {
-                                        handleClick()
-                                    }}
+                                    onClick={handleClick}
                                     className="mx-8"
                                     src={mobileSearch}
                                 />
